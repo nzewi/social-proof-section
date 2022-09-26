@@ -59,127 +59,207 @@ MODERN CSS RESET
   ***END OF RESET****************************
   *******************************************/
 
-
+:root {
+  --color-primary:  hsl(300, 43%, 22%);
+  --color-secondary:  hsl(333, 80%, 67%);
+  --color-text:  hsl(303, 10%, 53%)
+}
 
 html {
     font-size: 62.5%; /* to make 1rem = 10px */
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'League Spartan', sans-serif;
     font-size: 1.5rem;
-    color: hsl(229, 6%, 66%);
+    color: var(--color-text);
     font-weight: 400;
+    position: relative;
+
+
+   
   }
   
-  .feature {
-  background-color: hsl(0, 0%, 98%);
+  .social-proof {
+    
+    padding: 8rem 3rem;
+
+    display: grid;
+    gap: 4rem;
+    
+    /***/
+    max-width: 111rem;
+    padding: 2rem;
   }
-
-.feature {
-  padding: 8rem 3rem;
-
-}
-.feature__heading, .feature__card-heading {
-  
-  font-weight: 600;
-  color: hsl(234, 12%, 34%);
-  
-}
-.feature__heading {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-.accent {
-  display: block;
-  font-weight: 200;
-  
-}
-.feature__paragraph {
-  margin-bottom: 6rem;
-}
-.feature__cards {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-.feature__card {
+  /* body::before {
+    content: url('./images/bg-pattern-top-mobile.svg');
  
-  padding: 3rem 3rem;
-  border-radius: .5rem;
-  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+            
+            position: absolute;
+            top: 0%;
+            left: 0%;
+  }
+  body::after {
+    content: url('./images/bg-pattern-bottom-mobile.svg');
+ 
+            
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+  } */
 
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-
-}
-.feature__card--supervisor {
-  border-top: 5px solid hsl(180, 62%, 55%);
-}
-.feature__card--team-builder {
-  border-top: 5px solid hsl(0, 78%, 62%);
-}
-.feature__card--karma {
-  border-top: 5px solid hsl(34, 97%, 64%);
-}
-.feature__card--calculator {
-  border-top: 5px solid hsl(212, 86%, 64%);
-} 
-.feature__card-heading {
-  font-size: 2rem;
-  
-}
-.feature__card-paragraph {
-  font-size: 1.4rem;
-  margin-bottom: 2.5rem;
-}
-
-.feature__card-icon {
-  align-self: end;
-}
-
-@media (min-width: 38em) {
-  .feature {
-    padding: 8rem 8rem;
+  .social-proof__header {
     display: grid;
     gap: 2rem;
   }
-  .feature__paragraph {
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  .feature__heading, .feature__paragraph {
-    margin: auto;
-  }
-  .feature__cards {
-    padding: 0 2rem;
-  }
-}
-@media (min-width: 64em) {
-  html {
-    font-size: 70%;
-  }
-  .feature__paragraph {
-    max-width: 50%;
-  }
-
-  .feature__cards {
-    padding: 0 0;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-flow: dense;
-    gap: 3rem;
+  .social-proof__heading, .social-proof__rating-text {
     
+    font-weight: 700;
+    
+    color: var(--color-primary);
   }
-
-  .feature__card--supervisor, .feature__card--calculator {
-    transform: translateY(60%);
+  .social-proof__heading {
+    font-size: 4.5rem;
+    line-height: .8;
+    letter-spacing: -2.5px;
+    text-align: center;
   }
+.social-proof__paragraph {
+  text-align: center;
+}
+.social-proof__ratings {
+  display: grid;
+  
+  gap: 2rem;
+}
+.social-proof__rating, .social-proof__testimonial {
+  border-radius: 5px;
+}
+.social-proof__rating {
+  background-color: hsl(300, 24%, 96%);
+  padding: 1rem 3rem;
+  
 
-  .feature__card--karma {
-    grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  gap: 1rem;
+}
+.social-proof__rating-stars {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-proof__rating-text {
+  font-size: 1.8rem;
+}
+.social-proof__testimonials {
+  display: grid;
+  gap: 2rem;
+}
+.social-proof__testimonial {
+  background-color: var(--color-primary);
+  color: hsl(0, 0%, 100%);
+  padding: 4rem;
+  display: grid;
+  gap: 3rem;
+
+}
+.social-proof__testimonial-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(2, auto);
+  align-items: center;
+  column-gap: 2rem;
+  
+
+}
+
+.social-proof__testimonial-img {
+  width: 5rem;
+  border-radius: 100%;
+  grid-row: 1/-1;
+}
+
+
+.social-proof__testimonial-title {
+  color: var(--color-secondary);
+
+}
+.social-proof__testimonial-quote {
+  font-weight: 500;
+}
+  
+@media (min-width: 64em) {
+  body {
+     /**/
+     display: flex;
+     justify-content: center;
+     align-items: center;
   }
+  body::before {
+    content: url('./images/bg-pattern-top-desktop.svg');
+ 
+            
+            position: absolute;
+            top: 0%;
+            left: 0%;
+  }
+  body::after {
+    content: url('./images/bg-pattern-bottom-desktop.svg');
+ 
+            
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+  }
+    .social-proof {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 11rem 4rem;
 
+      justify-items: start;
+      max-width: 111rem;
+    }
+    
+
+    .social-proof__heading {
+      max-width: 35rem;
+      text-align: left;
+    }
+    .social-proof__paragraph {
+      max-width: 48rem;
+      text-align: left;
+    }
+
+    .social-proof__rating--translateX10 {
+      margin-left: 4.5rem;
+    }
+    .social-proof__rating--translateX20 {
+      margin-left: 9rem;
+    }
+
+    .social-proof__testimonials {
+      grid-template-columns: repeat(3, 1fr);
+
+      grid-column: 1/-1;
+      
+    }
+
+    .social-proof__rating {
+      width: 45rem;
+      flex-direction: row;
+      justify-content: start;
+
+      gap: 2rem;
+    }
+
+    .social-proof__testimonials--translate10 {
+      transform: translateY(10%);
+    }
+    .social-proof__testimonials--translate20 {
+      transform: translateY(20%);
+    }
 }

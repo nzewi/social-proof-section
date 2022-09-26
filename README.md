@@ -1,6 +1,6 @@
-# Frontend Mentor - Four card feature section solution
+# Frontend Mentor - Social proof section solution
 
-This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -15,7 +15,6 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 - [Author](#author)
 
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -23,18 +22,17 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
+- View the optimal layout for the section depending on their device's screen size
 
 ### Screenshot
 
 ![Screenshot](./images/screenshot.png)
 
 
-
 ### Links
 
-- Solution URL: [solution URL](https://github.com/nzewi/four-card-feature-section)
-- Live Site URL: [live site URL](https://nzewi.github.io/four-card-feature-section)
+- Solution URL: [solution URL](hhttps://github.com/nzewi/social-proof-section)
+- Live Site URL: [live site URL](https://nzewi.github.io/social-proof-section)
 
 ## My process
 
@@ -47,12 +45,11 @@ Users should be able to:
 
 ### What I learned
 
-I learned how to position grid items in different grid cells. I recapped the translate property.
+I learnt alot about CSS Grid. 
 
 ### Continued development
 
-I want to continue working on my Flexbox and CSS Grid
-
+I want to work on my CSS Grid skills especially with building layouts.
 
 ## Author
 
